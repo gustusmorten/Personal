@@ -180,13 +180,13 @@ html {
 body,
 input,
 select,
-textarea {
+textarea, button {
   color: #414f57;
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 14pt;
   font-weight: 300;
   line-height: 2;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -273,13 +273,13 @@ h6 {
 
 
 button {
-  @apply font-bold py-2 px-4 rounded-lg ;
+  @apply !font-bold !py-2 !px-4 !rounded-lg ;
 }
 .btn-blue {
-  @apply bg-blue-500 text-white;
+  @apply !bg-blue-500 !text-white;
 }
 .btn-blue:hover {
-  @apply bg-[#ff7496];
+  @apply !bg-[#ff7496];
 }
 
 @media screen and (max-width: 480px) {

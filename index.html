@@ -20,11 +20,11 @@
       class="flex flex-col items-center justify-end perspective-1000 relative min-h-full p-6 z-20"
     >
       <main
-        class="p-card bg-white rounded-lg shadow-lg opacity-[0.95] w-card absolute top-1/4 left-1/2 transform-gpu -translate-x-1/2 -translate-y-1/4"
+        class="p-card  bg-white rounded-lg shadow-lg opacity-[0.95] w-card absolute top-1/4 left-1/2 transform-gpu -translate-x-1/2 -translate-y-1/4"
       >
         <header class="avatar relative block mb-6 text-center">
           <div
-            class="mb-6 relative before:content-['&nbsp;'] before:block before:absolute before:top-2/4 before:left-[-3em] before:w-[calc(100%+6em)] before:h-[1px] before:bg-[#c8cccf] before:z-[-10]"
+            class="mb-6 relative"
           >
             <img
               src="images/me.jpeg"
@@ -34,7 +34,7 @@
           </div>
 
           <h1 class="text-lg font-medium mb-[0.5em]">
-            José Luis Camacho Torres
+            José Luis Camacho
           </h1>
           <p class="text-gray-600 mb-[1.5em]">Software Engineer</p>
         </header>
@@ -107,7 +107,7 @@
           </button>
         </footer>
       </main>
-      <footer id="footer">
+      <footer id="footer" class="text-white">
         <ul class="copyright">
           <li>
             &copy; José Luis Camacho -
@@ -137,7 +137,7 @@
             class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
           >
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Terms of Service
+              Contacto
             </h3>
             <button
               type="button"
@@ -167,14 +167,13 @@
                 <label
                   for="email"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >Your email</label
+                  >Email</label
                 >
                 <input
                   type="email"
                   id="email"
                   name="email"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="name@flowbite.com"
                   required
                 />
               </div>
@@ -182,19 +181,18 @@
                 <label
                   for="message"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >Your message</label
+                  >Tu mensaje</label
                 >
                 <textarea
                   type="message"
                   id="message"
                   name="message"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="name@flowbite.com"
                   required
                 ></textarea>
               </div>
               <!-- your other form fields go here -->
-              <button type="submit" class="btn-blue mx-auto">Send</button>
+              <button type="submit" class="btn-blue mx-auto">Enviar</button>
             </form>
           </div>
         </div>
