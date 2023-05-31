@@ -15,6 +15,9 @@ module.exports = {
       width: {
         'card': '27em',
       },
+      height: {
+        'screen-small': '100svh',
+      },
     },
   },
   plugins: [
