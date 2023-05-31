@@ -15,12 +15,12 @@
     />
   </head>
 
-  <body class="bg-gradient-to-t from-[#0ea5e9] to-indigo-500 h-screen">
+  <body class="is-preload bg-gradient-to-t from-[#0ea5e9] to-indigo-500 h-screen">
     <section
-      class="flex flex-col items-center justify-end perspective-1000 relative min-h-full p-6 z-20"
+      class="flex flex-col items-center justify-end relative min-h-full p-6 z-20 perspective-1000"
     >
       <main
-        class="p-card  bg-white rounded-lg shadow-lg opacity-[0.95] w-card absolute top-1/4 left-1/2 transform-gpu -translate-x-1/2 -translate-y-1/4"
+        class="p-card  bg-white rounded-lg shadow-lg opacity-[0.95] w-card absolute top-[10%]"
       >
         <header class="avatar relative block mb-6 text-center">
           <div
@@ -76,7 +76,7 @@
 						<hr />
 						-->
         <footer class="flex flex-col">
-          <ul class="text-center">
+          <ul class="text-center mb-4">
             <li class="inline-block py-[0.675em] px-[1em]">
               <a
                 href="https://www.linkedin.com/in/jose-luis-camacho-torres/"
@@ -203,5 +203,11 @@
       src="https://kit.fontawesome.com/8b3b2fa20f.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      if ('addEventListener' in window) {
+        window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+      }
+    </script>
   </body>
 </html>
